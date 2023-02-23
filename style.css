@@ -1,0 +1,94 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color:royalblue
+
+}
+body
+{
+    font-family:"Finger";
+    color: orange;
+}
+#Name
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+    align-items: center;
+    font-family: cursive; 
+    /* background: gray; */
+}
+.gameboard
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:20px;
+    width: 300px;
+    box-shadow: 8px 8px 8px 8px  rgb(162, 162, 162);
+    position: relative;
+    top: 40px;
+    
+}
+
+.box
+{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom:2px solid rgb(3, 141, 42) ;
+    border-right:2px solid rgb(3, 247, 35) ;
+    font-size:100px;
+    background-color: rgb(238, 241, 244);
+
+
+}
+.box:hover
+{
+    background-color: rgb(222, 233, 243);
+    box-shadow: 8px 8px pink;
+}
+.box:checked
+{
+    background-color: rgb(165, 206, 241);
+}
+.box:nth-child(3n)
+{
+    border-right:none ;
+}
+:nth-child(6)~.box{
+    border-bottom:none ;
+}
+
+#restart
+{
+  padding: 6px 40px;
+  border-radius: 12px;
+  color: orange;
+  background-color: black;
+  font-size:20px;
+  position: relative;
+  font-family: cursive;  
+  top: 10px;
+
+}
+#restart:hover
+{
+    cursor: pointer;
+    background-color: rgb(43, 1, 1);
+    color: orangered;
+}
+#message
+{
+   font-family: cursive;  
+   position: relative;
+   top: 60px;
+  transition: step-end;
+   transition-duration: 2s;
+   font-family: cursive; 
+
+}
