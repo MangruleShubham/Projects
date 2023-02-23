@@ -163,7 +163,8 @@ const start=()=>
 }
 function boxClicked(e)
 {
-   
+   if(Win)
+       return;
     let id=e.target.id;
     console.log(id);
     if(!spaces[id]){
